@@ -8,7 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { Phone, ShoppingCart, Plus, Minus, X } from "lucide-react";
 import { toast } from "sonner";
-import { axios } from "axios";
+import axios from "axios";
 
 const MenuPage = () => {
   const navigate = useNavigate();
