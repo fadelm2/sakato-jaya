@@ -8,6 +8,9 @@ import { Phone, MapPin, Clock, Star } from "lucide-react";
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
 
+console.log("BACKEND_URL:", BACKEND_URL);
+console.log("API:", API);
+
 const HomePage = () => {
   const [menuItems, setMenuItems] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -18,8 +21,9 @@ const HomePage = () => {
 
   const fetchMenu = async () => {
     try {
-      const response = await axios.get(`${API}/menu`);
-      setMenuItems(response.data.slice(0, 4)); // Show only 4 items on homepage
+      const response = await fetch('/data.json');
+      const data = await response.json();
+      setMenuItems(data.menu_items); // <--- sesuaikan isi file
       setLoading(false);
     } catch (error) {
       console.error("Error fetching menu:", error);
@@ -49,7 +53,7 @@ const HomePage = () => {
               <Link to="/about" className="text-gray-700 hover:text-red-600 font-medium transition-colors">Tentang Kami</Link>
             </div>
             <a 
-              href="https://wa.me/6285910661431" 
+              href="https://wa.me/62859106614314"
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-full font-medium transition-colors flex items-center space-x-2"
@@ -94,7 +98,7 @@ const HomePage = () => {
                 >
                   Lihat Menu
                 </Button>
-                <a href="https://wa.me/6285910661431" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/62859106614314" target="_blank" rel="noopener noreferrer">
                   <Button 
                     variant="outline" 
                     className="border-2 border-green-600 text-green-600 hover:bg-green-50 px-8 py-6 rounded-full text-lg font-semibold"
@@ -249,7 +253,7 @@ const HomePage = () => {
           <h2 className="text-4xl sm:text-5xl font-bold">Siap Memesan?</h2>
           <p className="text-xl text-red-100">Hubungi kami sekarang untuk pemesanan nasi box Anda</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a href="https://wa.me/6285910661431" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+            <a href="https://wa.me/62859106614314" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
               <Button 
                 className="bg-white text-red-600 hover:bg-gray-100 px-8 py-6 rounded-full text-lg font-semibold w-full sm:w-auto"
                 data-testid="cta-whatsapp-btn"

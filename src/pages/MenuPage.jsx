@@ -10,6 +10,12 @@ import { Phone, ShoppingCart, Plus, Minus, X } from "lucide-react";
 import { toast } from "sonner";
 import axios from "axios";
 
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const API = `${BACKEND_URL}/api`;
+
+console.log("BACKEND_URL:", BACKEND_URL);
+console.log("API:", API);
+
 const MenuPage = () => {
   const navigate = useNavigate();
   const [menuItems, setMenuItems] = useState([]);
