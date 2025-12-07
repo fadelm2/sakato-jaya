@@ -2,10 +2,10 @@
   "menu_items": [
     {
       "id": "ayam-001",
-      "name": "Nasi Box Ayam",
+      "name": "Nasi Box Ayam Goreng",
       "description": "Nasi putih hangat dengan ayam goreng rempah khas Padang, sambal merah, dan lauk pelengkap",
       "price": 25000,
-      "image": "https://images.unsplash.com/photo-1688084546323-fcd3f9d8389b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHwxfHxyZW5kYW5nJTIwYmVlZnxlbnwwfHx8fDE3NjQ2NTExNzF8MA&ixlib=rb-4.1.0&q=85",
+      "image": "assets/ayamgorengpadang.png",
       "category": "nasi_box"
     },
     {
@@ -13,15 +13,15 @@
       "name": "Nasi Box Rendang",
       "description": "Nasi putih dengan rendang sapi empuk bumbu meresap, sambal hijau, dan sayur",
       "price": 30000,
-      "image": "https://images.unsplash.com/photo-1688084442478-3b499d17126f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHwyfHxyZW5kYW5nJTIwYmVlZnxlbnwwfHx8fDE3NjQ2NTExNzF8MA&ixlib=rb-4.1.0&q=85",
+      "image": "assets/nasibox-rendang.png",
       "category": "nasi_box"
     },
     {
-      "id": "ikan-001",
-      "name": "Nasi Box Ikan",
-      "description": "Nasi putih dengan ikan goreng/bakar pilihan, sambal andaliman, dan lauk segar",
+      "id": "bakar-001",
+      "name": "Nasi Box Ayam Bakar",
+      "description": "Nasi putih dengan Ayam Bakar, sambal andalan, dan lauk sayur pelengkap ",
       "price": 28000,
-      "image": "https://images.pexels.com/photos/14314105/pexels-photo-14314105.jpeg",
+      "image": "assets/ayambakar.jpg",
       "category": "nasi_box"
     },
     {
