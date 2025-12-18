@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://food.sakatojaya.shop/sitemap.xml
+Sitemap: https://nasipadang.sakatojaya.shop/sitemap.xml
